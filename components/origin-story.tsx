@@ -30,7 +30,7 @@ export function OriginStory() {
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I had an idea for this app three years ago. It came from my own frustration — every time a friend told me about a book or a show, I&apos;d promise to check it out, then forget by the next week. I tried notes apps. I tried screenshots. Nothing stuck.
+                I had an idea for this app three years ago. It came from my own frustration. Every time a friend told me about a book or a show, I&apos;d promise to check it out, then forget by the next week. I tried notes apps. I tried screenshots. Nothing stuck.
               </p>
               
               <p>
@@ -49,7 +49,7 @@ export function OriginStory() {
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              <p className="text-lg font-medium text-foreground">— Kelli</p>
+              <p className="text-lg font-medium text-foreground">– Kelli</p>
             </motion.div>
           </div>
         </motion.div>

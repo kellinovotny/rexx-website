@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { QRCodeSVG } from "qrcode.react"
 
 export function FinalCTA() {
   return (
@@ -38,27 +39,46 @@ export function FinalCTA() {
             Join thousands who never lose a recommendation again.
           </p>
           
-          <motion.div 
-            className="mt-10 flex justify-center"
+          <motion.div
+            className="mt-10 flex items-center justify-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <a 
-              href="https://apps.apple.com/app/rexx" 
-              target="_blank" 
+            <a
+              href="https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+              target="_blank"
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-90 transition-all duration-300 hover:-translate-y-1 transform"
+              className="inline-block transition duration-300 ease-out hover:opacity-90 hover:-translate-y-1"
             >
-              <Image 
-                src="/app-store-badge.svg" 
-                alt="Download on the App Store" 
-                width={200} 
+              <Image
+                src="/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={200}
                 height={67}
                 className="h-16 w-auto"
               />
             </a>
+
+            <div className="hidden lg:flex items-center gap-4">
+              <div className="h-14 w-px bg-border" />
+              <div className="flex flex-col items-center gap-1.5">
+                <div className="p-2 bg-card rounded-lg border border-border/50 shadow-sm">
+                  <QRCodeSVG
+                    value="https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+                    size={64}
+                    bgColor="transparent"
+                    fgColor="#1a1a1a"
+                    level="M"
+                    marginSize={2}
+                  />
+                </div>
+                <p className="text-[10px] text-muted-foreground tracking-wider font-medium uppercase">
+                  Scan to install
+                </p>
+              </div>
+            </div>
           </motion.div>
 
           {/* Trust indicators */}

@@ -38,9 +38,8 @@ export function SocialProof() {
   return (
     <section className="py-16 overflow-hidden">
       <div className="relative">
-        {/* First row - scrolling left */}
         <motion.div
-          className="flex gap-6 mb-6"
+          className="flex gap-6"
           animate={{ x: [0, -1920] }}
           transition={{
             x: {
@@ -52,24 +51,6 @@ export function SocialProof() {
           }}
         >
           {[...recommendations, ...recommendations, ...recommendations].map((rec, i) => (
-            <RecommendationCard key={i} {...rec} />
-          ))}
-        </motion.div>
-        
-        {/* Second row - scrolling right */}
-        <motion.div
-          className="flex gap-6"
-          animate={{ x: [-1920, 0] }}
-          transition={{
-            x: {
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 35,
-              ease: "linear",
-            },
-          }}
-        >
-          {[...recommendations.slice(4), ...recommendations.slice(0, 4), ...recommendations, ...recommendations].map((rec, i) => (
             <RecommendationCard key={i} {...rec} />
           ))}
         </motion.div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const steps = [
   {
     title: "Save it",
-    description: "Quickly capture any recommendation — books, movies, restaurants, podcasts, anything.",
+    description: "Quickly capture any recommendation: books, movies, restaurants, podcasts, anything.",
     number: "01",
     color: "from-rexx-blue/20 to-rexx-blue/5",
   },

@@ -10,7 +10,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: 'Rexx - Never Forget a Recommendation',
-  description: 'Books, movies, restaurants, music, and more — from the people you trust. People over algorithms.',
+  description: 'Books, movies, restaurants, music, and more. From the people you trust. People over algorithms.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} font-sans antialiased`} suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
