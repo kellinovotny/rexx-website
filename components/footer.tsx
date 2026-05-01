@@ -22,18 +22,18 @@ export function Footer() {
             >
               Privacy
             </Link>
-            <Link 
-              href="#" 
+            <Link
+              href="/terms"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms
             </Link>
-            <Link 
-              href="#" 
+            <a
+              href="mailto:feedback@therexxapp.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact
-            </Link>
+            </a>
           </nav>
 
           {/* Copyright */}

@@ -38,10 +38,10 @@ export default function PrivacyPage() {
               collects, why, and how it&rsquo;s handled. If something
               isn&rsquo;t clear, email{" "}
               <a
-                href="mailto:hello@therexxapp.com"
+                href="mailto:feedback@therexxapp.com"
                 className="text-[var(--rexx-blue)] underline underline-offset-2 hover:opacity-80"
               >
-                hello@therexxapp.com
+                feedback@therexxapp.com
               </a>
               .
             </p>
@@ -206,10 +206,10 @@ export default function PrivacyPage() {
             <p>
               Questions or concerns? Email{" "}
               <a
-                href="mailto:hello@therexxapp.com"
+                href="mailto:feedback@therexxapp.com"
                 className="text-[var(--rexx-blue)] underline underline-offset-2 hover:opacity-80"
               >
-                hello@therexxapp.com
+                feedback@therexxapp.com
               </a>
               .
             </p>
