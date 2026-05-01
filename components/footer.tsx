@@ -16,8 +16,8 @@ export function Footer() {
         >
           {/* Links */}
           <nav className="flex items-center gap-8 text-sm">
-            <Link 
-              href="#" 
+            <Link
+              href="/privacy"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy
