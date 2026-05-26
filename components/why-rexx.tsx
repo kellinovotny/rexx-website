@@ -19,7 +19,7 @@ const features = [
   {
     icon: Cloud,
     title: "Synced Everywhere",
-    description: "Your recommendations live in the cloud, accessible on all your devices, always up to date.",
+    description: "Your recommendations live in the cloud, accessible on all your devices.",
     color: "bg-rexx-coral/10 text-rexx-coral",
   },
 ]

@@ -36,7 +36,7 @@ export function FinalCTA() {
           </h2>
           
           <p className="mt-6 text-xl text-muted-foreground max-w-xl mx-auto">
-            Join thousands who never lose a recommendation again.
+            Rated 5.0 ★ by early users. Free, no account required.
           </p>
           
           <motion.div
