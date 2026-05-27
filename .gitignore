@@ -138,3 +138,6 @@ dist
 
 # Local editor / tooling config
 .claude/
+
+# Local Claude Code project context (personal vault paths)
+CLAUDE.md
