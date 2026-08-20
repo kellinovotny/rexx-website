@@ -82,7 +82,7 @@
 
 @theme inline {
   --font-sans: var(--font-manrope), 'Manrope', system-ui, sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-mono: var(--font-geist-mono), 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   --color-rexx-blue: var(--rexx-blue);
   --color-rexx-orange: var(--rexx-orange);
   --color-rexx-coral: var(--rexx-coral);

@@ -1,11 +1,17 @@
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Manrope, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const manrope = Manrope({
   subsets: ["latin"],
   variable: '--font-manrope',
+})
+
+// globals.css already points --font-mono at 'Geist Mono' but it was never loaded.
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: '--font-geist-mono',
 })
 
 const SITE_URL = 'https://therexxapp.com'
@@ -39,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body className={`${manrope.variable} ${geistMono.variable} font-sans antialiased`} suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
