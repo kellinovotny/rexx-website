@@ -29,6 +29,9 @@ export type HeroTheme = {
   rule: string
   badgeRing: string
   phoneFrame: string
+  /** Home-screen capture. Should match the theme: light app on paper, dark app on navy. */
+  shot: string
+  shotAlt: string
 }
 
 export const PAPER: HeroTheme = {
@@ -42,6 +45,8 @@ export const PAPER: HeroTheme = {
   rule: "rgba(26,22,19,0.10)",
   badgeRing: "transparent",
   phoneFrame: "#1A1613",
+  shot: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-03-16%20at%2008.23.14-c1fA8EXhMilP1tIN79abN6QAlSgeY1.png",
+  shotAlt: "Rexx home screen showing saved recommendations by category",
 }
 
 export const NAVY: HeroTheme = {
@@ -55,6 +60,9 @@ export const NAVY: HeroTheme = {
   rule: "rgba(245,242,237,0.12)",
   badgeRing: "rgba(245,242,237,0.28)",
   phoneFrame: "#070B14",
+  // TODO swap for the dark-mode capture once onboarding can be driven.
+  shot: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-03-16%20at%2008.23.14-c1fA8EXhMilP1tIN79abN6QAlSgeY1.png",
+  shotAlt: "Rexx home screen in dark mode showing saved recommendations by category",
 }
 
 export function HeroFlat({ theme }: { theme: HeroTheme }) {
@@ -125,8 +133,8 @@ export function HeroFlat({ theme }: { theme: HeroTheme }) {
             >
               <div className="overflow-hidden rounded-[2.25rem]">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-03-16%20at%2008.23.14-c1fA8EXhMilP1tIN79abN6QAlSgeY1.png"
-                  alt="Rexx home screen showing saved recommendations by category"
+                  src={theme.shot}
+                  alt={theme.shotAlt}
                   className="h-[540px] w-full object-cover object-top md:h-[600px]"
                 />
               </div>
