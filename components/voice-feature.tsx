@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { APP_STORE_URL } from "@/lib/links"
 
 export function VoiceFeature() {
   return (
@@ -47,7 +48,7 @@ export function VoiceFeature() {
               transition={{ delay: 0.4 }}
             >
               <a
-                href="https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+                href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block transition duration-300 ease-out hover:opacity-90 hover:-translate-y-0.5"
