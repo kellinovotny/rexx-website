@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Rexx",
+  title: "Terms of Service | Rexx",
   description:
     "The basic ground rules for using Rexx. Plain language, no surprises.",
 }
