@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { QRCodeSVG } from "qrcode.react"
+import { APP_STORE_URL } from "@/lib/links"
 
 export function Hero() {
   return (
@@ -73,7 +74,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
             >
               <a
-                href="https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+                href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block transition duration-300 ease-out hover:opacity-90 hover:-translate-y-0.5"
@@ -92,7 +93,7 @@ export function Hero() {
                 <div className="flex flex-col items-center gap-1.5">
                   <div className="p-2 bg-card rounded-lg border border-border/50 shadow-sm">
                     <QRCodeSVG
-                      value="https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+                      value={APP_STORE_URL}
                       size={56}
                       bgColor="transparent"
                       fgColor="#1a1a1a"

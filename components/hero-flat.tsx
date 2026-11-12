@@ -1,9 +1,7 @@
 "use client"
 
 import Image from "next/image"
-
-const APP_STORE_URL =
-  "https://apps.apple.com/us/app/rexx-save-share-ideas/id6751042420"
+import { APP_STORE_URL } from "@/lib/links"
 
 // The eight real covers in /public/recs. Cover art is the hero's texture,
 // which is the one decorative asset no competitor can copy.
